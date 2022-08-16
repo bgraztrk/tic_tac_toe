@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.app-header {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  background-color: #696969;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-text {
+  color: white;
+  font-size: 65px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 50px;
+  font-family:'Times New Roman',serif;
+  font-variant:small-caps;
+  text-align:center;
+  padding:15px 0px 15px 0px;
+}
+
+.square {
+  min-width: 100px;
+  min-height: 100px;
+  font-size: 64px;
+  text-align: center;
+  color: #1CDBF5;
+  font-weight: bolder;
+  padding: 30px;
+}
+
+.fc-aqua {
+  color: #1CDBF5;
+}
+
+.fc-white {
+  color: #1CDBF5;
+}
+
+.fw-600 {
+  font-weight: bolder;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.b-bottom-right {
+  border-right: 15px solid #1CDBF5;
+  border-bottom: 15px solid #1CDBF5;
+}
+
+.b-bottom {
+  border-bottom: 15px solid #1CDBF5;
+}
+
+.b-right {
+  border-right: 15px solid #1CDBF5;
+}
+
+.clear-button {
+  margin: 40px auto 10px auto;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.clear-button:active,
+.clear-button:hover{
+  outline: 0;
+}
+
+.clear-button span{
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.clear-button span:hover{
+  background-color: none;
+}
+
+@media (min-width: 768px) {
+  .clear-button {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heading-text {
+      color: white;
+      font-size: 30px;
+      font-weight: bolder;
+      text-align: center;
+      margin: 60px 10px;
+  }
+
+  .square {
+      min-width: 80px;
+      min-height: 80px;
+      font-size: 32px;
+      font-weight: bolder;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .b-bottom-right {
+      border-right: 10px solid #1CDBF5;
+      border-bottom: 10px solid #1CDBF5;
+  }
+
+  .b-bottom {
+      border-bottom: 10px solid #1CDBF5;
+  }
+
+  .b-right {
+      border-right: 10px solid #1CDBF5;
+  }
+
+  .clear-button {
+      width: max-content;
+      margin: 40px auto 10px auto;
+  }
+}
